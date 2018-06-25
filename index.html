@@ -17,8 +17,9 @@
 }
     body{
       text-align: center;
-      background-image: url("underwater.png");
+    
     }
+
       #title{
         text-align: center;
       }
@@ -55,9 +56,23 @@
       #green_one{
         font-size: 25px;
       }
+      html{ 
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
     </style>
   </head>
   <body>
+    <div id="parallax"></div>
     <div id="text"><!--text starts-->
     <h1 id="title">Tom's Turtle Poster</h1>
     <h2 class="btn btn-success" id="turtles">Turtles</h2>
